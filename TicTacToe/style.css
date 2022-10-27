@@ -1,0 +1,46 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.grid-container {
+	position: absolute;
+	display: grid;
+	width: 400px;
+	height: 400px;
+	grid-template-rows: 120px 120px 120px;
+	grid-template-columns: 120px 120px 120px;
+	background-color: white;
+	padding: 10px;
+}
+
+.squares {
+	position: relative;
+	background-color: lightgreen;
+	border: 3px solid darkgreen;
+	padding: 10%;
+	font-family: monospace;
+	font-size: 50px;
+	line-height: 90px;
+	text-align: center;
+	color: red;
+	box-shadow: 5px 5px 5px gray;
+	cursor: pointer;
+	user-select: none;
+
+}
+
+.animate {
+	animation: highlight ;
+}
+
+@keyframes highlight {
+	0% {background-color: lightgreen;}
+	100% {background-color: yellow;}
+}
